@@ -3,6 +3,12 @@ body {
   background: #e6f4fd;
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    display: flex;
+}
+
+
 .ui-form {
   max-width: 350px;
   padding: 80px 30px 30px;
@@ -91,4 +97,15 @@ body {
 .ui-form p {
   margin: 0;
   padding-top: 10px;
+}
+
+.description {
+    margin: 50px 50px;
+    max-width: 420px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+li {
+    list-style-type: none;
 }

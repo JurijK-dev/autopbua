@@ -8,19 +8,34 @@
 </head>
 
 <body>
+    <div class="container">
+        <form action="https://0-157-0.app.nr.it.loc/autopbuaEdit" class="ui-form" method="get">
+            <h3>Работа с объявлениями</h3>
+            <div class="form-row">
+                <input type="text" name="carID" required autocomplete="off" placeholder="Референс оценки"><label for="carID"> </label>
+                <input type="text" name="create" required autocomplete="off" placeholder="Добавить"><label for="create"> </label>
+                <input type="text" name="update" required autocomplete="off" placeholder="Обновить"><label for="update"> </label>
+                <input type="text" name="delete" required autocomplete="off" placeholder="Удалить"><label for="delete"> </label>
+            </div>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
 
-    <form action="https://0-157-0.app.nr.it.loc/autopbuaEdit" class="ui-form" method="get">
-        <h3>Работа с объявлениями</h3>
-        <div class="form-row">
-            <input type="text" name="carID" required autocomplete="off" placeholder="Оценка"><label for="carID"> </label>
-            <input type="text" name="create" required autocomplete="off" placeholder="1 - создать (0 - по умолчанию)"><label for="create"> </label>
-            <input type="text" name="update" required autocomplete="off" placeholder="1 - обновить (0 - по умолчанию)"><label for="update"> </label>
-            <input type="text" name="delete" required autocomplete="off" placeholder="1 - удалить (0 - по умолчанию)"><label for="delete"> </label>
-
+        <div class="description">
+            <div class="description_text">
+                <h2 class="heading">Описание</h2>
+                <p>Для управления объявлениями на сайте в нужном пункте указываем цифру 1, в остальных проставляем 0. <br />
+                    Референс оценки берем из Проминь - Опер.день - ОТС - Оценка
+                </p>
+                <h4>Пример добавления объявления</h4>
+                <ul>
+                    <li>Z20B3PB1000007 - референс </li>
+                    <li>1 - да, добавляем</li>
+                    <li>0 - нет</li>
+                    <li>0 - нет</li>
+                </ul>
+            </div>
         </div>
-        <p><input type="submit" value="Отправить"></p>
-    </form>
-
+    </div>
 </body>
 
 </html>
